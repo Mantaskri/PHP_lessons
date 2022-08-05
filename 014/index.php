@@ -26,3 +26,24 @@ $colors = ['red', 'valio' => 'green', 'blue', 'yellow'];
 foreach ($colors as $index => $value) {
     echo 'Reiksme: ' . $index . ' Reiksme: ' . $value . '<br>';
 }
+
+$_3x3 = [];
+$count = 0;
+
+foreach (range(1, 3) as $_) {
+
+    $_3 = [];
+    foreach (range(1, 3) as $_) {
+        $_3[] = ++$count;
+    }
+    $_3x3[] = $_3;
+}
+print_r($_3x3);
+
+/*foreach (range(0 ,2) as $a) {
+    foreach (range(0, 2) as $b) {
+        $_3x3[$a][$b] = ++$count;
+    }
+}
+print_r($3x3);
+*/
