@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.two-links {
+    background-color: rgb(220, 20, 20);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.two-links a {
+    color: cornflowerblue;
+    text-decoration: none;
+    transition: all 0.5s;
+    padding: 20px;
+}
+
+.two-links a:hover {
+    color: blueviolet;
+}
