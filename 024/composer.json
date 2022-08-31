@@ -1,0 +1,16 @@
+{
+    "name": "manta/024",
+    "description": "Bla bla bla",
+    "autoload": {
+        "psr-4": {
+            "Petro\\": "01/",
+            "Antano\\Belekas\\": "02/",
+            "": "01/"
+        }
+    },
+    "authors": [{
+        "name": "Mantas Krinickas",
+        "email": "mantas.krinickas@hotmail.com"
+    }],
+    "require": {}
+}

@@ -1,0 +1,15 @@
+{
+    "name": "manta/025",
+    "autoload": {
+        "psr-4": {
+            "": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mantas Krinickas",
+            "email": "mantas.krinickas@hotmail.com"
+        }
+    ],
+    "require": {}
+}
