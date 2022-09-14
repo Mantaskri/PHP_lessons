@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\NiceController as Nice;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,12 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/eziukas', fn() => '<h2>EZIUKAS</h2>');
-/*
-arba
-*/
-Route::get('/bebras', function() { return '<h2>BEBRAS</h2>';});
-//-------------------------------------------------------------------------
-Route::get('/fun/{kiek}/{abc}', [Nice::class, 'fun']);
+Auth::routes();
 
-Route::get('/suma', [Nice::class, 'showForm']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
