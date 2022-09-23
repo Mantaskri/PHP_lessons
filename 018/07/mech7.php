@@ -1,11 +1,12 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    header('Location: http://localhost/PHP_lessons/018/07/mech7.php');
+    header('Location: http://localhost/PHP-lessons/018/07/mech7.php');
     die;
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +14,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
+
 <body style="background:<?= $_SERVER['REQUEST_METHOD'] == 'POST' ? '#FAFA33' : 'lime' ?>">
 
     <h1 contenteditable="true">Labas</h1>
 
 
     <div class="two-links">
-    <form action="http://localhost/PHP_lessons/018/07/mech7.php" method="get">
-        <button type="submit">GET</button>
-    </form>
+        <form action="http://localhost/PHP-lessons/018/07/mech7.php" method="get">
+            <button type="submit">GET</button>
+        </form>
     </div>
 
     <div class="two-links">
-    <form action="http://localhost/PHP_lessons/018/07/mech7.php" method="post">
-        <button type="submit">POST</button>
-    </form>
+        <form action="http://localhost/PHP-lessons/018/07/mech7.php" method="post">
+            <button type="submit">POST</button>
+        </form>
     </div>
-    
+
 </body>
+
 </html>

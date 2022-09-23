@@ -1,8 +1,8 @@
 <?php
 session_start();
-define('INSTALL', '/delfinai/login/');
+define('INSTALL', '/php-lessons/login/');
 define('DIR', __DIR__. '/');
-define('URL', 'http://localhost/delfinai/login/');
+define('URL', 'http://localhost/php-lessons/login/');
 
 
 

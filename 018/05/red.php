@@ -17,7 +17,7 @@ if ('GET' == $_SERVER['REQUEST_METHOD']) {
 </head>
 <body style="background:crimson">
 <div class="two-links">
-<a href="http://localhost/PHP_lessons/018/05/red.php?redir=1" method="get">CLICK ME</a>
+<a href="http://localhost/PHP-lessons/018/05/red.php?redir=1" method="get">CLICK ME</a>
 </div>
 </body>
 </html>

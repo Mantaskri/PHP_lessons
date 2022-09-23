@@ -1,12 +1,15 @@
 <?php
+
 namespace App\Controllers;
 
 
 use App\App;
 use App\DB\Json;
 
-class HomeController {
-    public function home() {
+class HomeController
+{
+    public function home()
+    {
         $title = 'H-O-M-E';
         $welcome = 'Hello from Madagascar';
 

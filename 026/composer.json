@@ -1,5 +1,5 @@
 {
-    "name": "edvin/026",
+    "name": "manta/024",
     "autoload": {
         "psr-4": {
             "": ""
@@ -7,8 +7,8 @@
     },
     "authors": [
         {
-            "name": "marinkus",
-            "email": "marinkus@gmail.com"
+            "name": "Mantas Krinickas",
+            "email": "mantas.krinickas@hotmail.com"
         }
     ],
     "require": {}

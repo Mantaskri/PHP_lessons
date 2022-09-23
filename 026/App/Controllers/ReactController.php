@@ -22,7 +22,7 @@ class ReactController
             'weight' => $rawData['weight'],
             'tail' => $rawData['tail']
         ]);
-        return App::json(['msg' => 'Gyvulys "'.$rawData['type'].'" sukurtas.']);
+        return App::json(['msg' => 'Gyvulys "' . $rawData['type'] . '" sukurtas.']);
     }
     public function delete(int $id)
     {

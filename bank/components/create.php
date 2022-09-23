@@ -18,7 +18,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 
     file_put_contents(__DIR__ . '/data.json', json_encode($data));
 
-    header("Location: http://localhost/defilnai/018/bank/components/create.php");
+    header("Location: http://localhost/php-lessons/018/bank/components/create.php");
     die;
 }
 

@@ -17,7 +17,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 
     file_put_contents(__DIR__ . '/data.json', json_encode($data));
 
-    header("Location: http://localhost/delfinai/017/");
+    header("Location: http://localhost/php-lessons/017/");
     die;
 
 }
@@ -40,9 +40,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 </head>
 
 <body>
-    <a href="http://localhost/delfinai/017/"><?= $cat ?></a>
+    <a href="http://localhost/php-lessons/017/"><?= $cat ?></a>
 
-    <form action="http://localhost/delfinai/017/" method="post">
+    <form action="http://localhost/php-lessons/017/" method="post">
 
         <input type="text" name="rapolas" />
         <button type="submit">Tikras</button>

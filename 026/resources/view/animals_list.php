@@ -17,22 +17,22 @@ App\App::view('top', ['title' => $title]);
                                 <div class="line">
                                     <div class="line__content">
                                         <div class="line__content__type">
-                                            
+
                                             <?= $animal['type'] ?>
                                         </div>
                                         <div class="line__content__weight">
-                                        <?= $animal['weight'] ?>
+                                            <?= $animal['weight'] ?>
                                         </div>
-                                        <?php if ($animal['tail'])  { ?>
+                                        <?php if ($animal['tail']) { ?>
                                             <div class="line__content__tail"></div>
                                         <?php }  ?>
                                     </div>
                                     <div class="line__buttons">
-                                    <a href="<?= URL . 'animals/edit/'. $animal['id']?>" type="button" class="btn btn-outline-success m-2">Edit</a>
-                                    <form action="<?= URL . 'animals/delete/'. $animal['id']?>" method="post">
-                                    <button type="submit" class="btn btn-outline-danger m-2">Delete</button>
-                                    </form>
-                                </div>
+                                        <a href="<?= URL . 'animals/edit/' . $animal['id'] ?>" type="button" class="btn btn-outline-success m-2">Edit</a>
+                                        <form action="<?= URL . 'animals/delete/' . $animal['id'] ?>" method="post">
+                                            <button type="submit" class="btn btn-outline-danger m-2">Delete</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </li>
                         <?php endforeach ?>

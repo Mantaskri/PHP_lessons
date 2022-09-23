@@ -4,8 +4,9 @@ die;
 ?>
 <!DOCTYPE html>
 <!-- perkrauna puslapi su redirectu po 2sec. -->
-<!-- <meta http-equiv="refresh" content="2; URL='http://localhost/PHP_lessons/018/04/orange.php'"/> --> 
+<!-- <meta http-equiv="refresh" content="2; URL='http://localhost/PHP-lessons/018/04/orange.php'"/> -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,9 @@ die;
     <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
+
 <body style="background:#fafa33">
-    
+
 </body>
+
 </html>

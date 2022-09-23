@@ -9,10 +9,10 @@ class SuperKibiras extends Kibiras {
         self::$akmenuKiekisVisuoseKibiruose += 2;
     }
 
-    public function prideti1Akmeni() : void
+/*     public function prideti1Akmeni() : void
     {
         $this->akmenuKiekis *= 10;
         self::$akmenuKiekisVisuoseKibiruose *= 10;
     }
-
-}
+ */
+};

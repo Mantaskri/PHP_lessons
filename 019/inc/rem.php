@@ -1,3 +1,3 @@
 <?php
 
-echo 'rem from id: ' . $url[1];
+echo "Remove money from user ID: $url[1]";

@@ -30,7 +30,7 @@ INSERT INTO trees
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$_POST['type'], $_POST['height'], $_POST['title']]);
 
-    header('Location: http://localhost/defilnai/032/');
+    header('Location: http://localhost/php-lessons/032/');
     die;
 }
 

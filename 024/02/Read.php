@@ -1,9 +1,11 @@
 <?php
+
 namespace Antano\Belekas;
 
-class Read {
+class Read
+{
 
-    public function sadBook() 
+    public function sadBook()
     {
         return 'Bee, very sad!';
     }

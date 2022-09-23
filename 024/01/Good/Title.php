@@ -2,7 +2,8 @@
 
 namespace Good;
 
-interface Title {
+interface Title
+{
 
     const T = 'Book off';
 }

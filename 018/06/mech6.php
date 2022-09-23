@@ -13,13 +13,13 @@
 
 
     <div class="two-links">
-    <form action="http://localhost/PHP_lessons/018/06/mech6.php" method="get">
+    <form action="http://localhost/PHP-lessons/018/06/mech6.php" method="get">
         <button type="submit">GET</button>
     </form>
     </div>
 
     <div class="two-links">
-    <form action="http://localhost/PHP_lessons/018/06/mech6.php" method="post">
+    <form action="http://localhost/PHP-lessons/018/06/mech6.php" method="post">
         <button type="submit">POST</button>
     </form>
     </div>

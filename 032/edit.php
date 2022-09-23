@@ -37,7 +37,7 @@ WHERE id = :id
         ]
     );
 
-    header('Location: http://localhost/defilnai/032/');
+    header('Location: http://localhost/php-lessons/032/');
     die;
 }
 ?>

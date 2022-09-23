@@ -8,7 +8,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $checked = count($_POST['c'] ?? []);
-    header('Location: http://localhost//PHP_lessons/018/09/mech9.php?all='.$checked );
+    header('Location: http://localhost//PHP-lessons/018/09/mech9.php?all=' . $checked);
     die;
 }
 
@@ -29,23 +29,23 @@ $count = rand(3, 10);
 </head>
 
 <body style="background:<?= $color ?>">
-<?php if(isset($_GET['all'])): ?>
-<a href="http://localhost//PHP_lessons/018/09/mech9.php">BACK</a>
-<h1> ALL CHECKED IS : <?= $_GET['all'] ?></h1>
+    <?php if (isset($_GET['all'])) : ?>
+        <a href="http://localhost//PHP-lessons/018/09/mech9.php">BACK</a>
+        <h1>TOTAL CHECKED IS : <?= $_GET['all'] ?></h1>
 
-    <?php else: ?>   
-    <div class="two-links">
-        <form action="http://localhost//PHP_lessons/018/09/mech9.php" method="post">
+    <?php else : ?>
+        <div class="two-links">
+            <form action="http://localhost//PHP-lessons/018/09/mech9.php" method="post">
 
-            <?php foreach(range(1, $count) as $number): ?>
-            <input type="checkbox" name="c[]" value="<?= $aj[$number-1] ?>" /><?= $aj[$number-1] ?>
-            <?php endforeach ?>
+                <?php foreach (range(1, $count) as $number) : ?>
+                    <input type="checkbox" name="c[]" value="<?= $aj[$number - 1] ?>" /><?= $aj[$number - 1] ?>
+                <?php endforeach ?>
 
-            <button type="submit">GO</button>
-        </form>
-    </div>
+                <button type="submit">GO</button>
+            </form>
+        </div>
 
-<?php endif ?>
+    <?php endif ?>
 
 </body>
 

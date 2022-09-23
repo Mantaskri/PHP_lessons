@@ -12,21 +12,21 @@ App\App::view('top', ['title' => $title]);
                 </div>
                 <div class="card-body">
                     <form action="<?= URL ?>animals/store" method="post">
-                    <div class="form-group">
-                        <label>Type</label>
-                        <input type="text" class="form-control" name="type">
-                        <small class="form-text text-muted">Animal type</small>
-                    </div>
-                    <div class="form-group">
-                        <label>Weight</label>
-                        <input type="text" class="form-control" name="weight">
-                        <small class="form-text text-muted">Animal weight in kg</small>
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" name="tail">
-                        <label class="form-check-label">Has tail?</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <input type="text" class="form-control" name="type">
+                            <small class="form-text text-muted">Animal type</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Weight</label>
+                            <input type="text" class="form-control" name="weight">
+                            <small class="form-text text-muted">Animal weight in kg</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="tail">
+                            <label class="form-check-label">Has tail?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
                     </form>
                 </div>
             </div>

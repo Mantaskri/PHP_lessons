@@ -1,5 +1,6 @@
 <?php
-class Tv {
+class Tv
+{
 
     public $color;
     private $size;
@@ -34,7 +35,4 @@ class Tv {
     {
         echo '<h1>' . $this->size . '</h1>';
     }
-
-
-
 }

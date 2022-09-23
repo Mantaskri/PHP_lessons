@@ -27,10 +27,10 @@ function doColor()
 </head>
 <body style="background:<?= doColor() ?>">
     <div class="two-links">
-    <a href="http://localhost/PHP_lessons/018/mech23.php">Be nieko</a>
+    <a href="http://localhost/PHP-lessons/018/mech23.php">Be nieko</a>
     </div>
     <div class="two-links">
-        <form action="http://localhost/PHP_lessons/018/mech23.php" method="get">
+        <form action="http://localhost/PHP-lessons/018/mech23.php" method="get">
         <input type="color" name="color"/>
         <button type="submit">Keiciam!</button>
     </div>

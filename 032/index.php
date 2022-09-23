@@ -35,7 +35,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$_POST['id']]);
 
-    header('Location: http://localhost/defilnai/032/index.php');
+    header('Location: http://localhost/php-lessons/032/index.php');
     die;
 }
 ?>

@@ -28,12 +28,12 @@ class ApiController
         $output = json_decode($output);
 
         $_SESSION['distance'] = [
-            'from' => $_POST['from'], 
-            'where' => $_POST['where'], 
+            'from' => $_POST['from'],
+            'where' => $_POST['where'],
             'distance' => $output->distance,
-        'from_link' => $output->stops[0]->wikipedia->home,
-        'where_link' => $output->stops[1]->wikipedia->home
-    ];
+            'from_link' => $output->stops[0]->wikipedia->home,
+            'where_link' => $output->stops[1]->wikipedia->home
+        ];
         return App::redirect('api/go');
     }
 }
