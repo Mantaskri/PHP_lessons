@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('mechanics', function (Blueprint $table) {
             $table->id();
-            $table->timestamps('name', 64);
-            $table->timestamps('surname', 64);
+            $table->string('name', 64);
+            $table->string('surname', 64);
             $table->timestamps();
         });
     }
