@@ -3,7 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
+use App\Http\Controllers\SquareController as S;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,11 +30,7 @@ Route::get('/dashboard', function () {
 
 // Route::inertia('/red-square', 'RedSquare');
 
-Route::get('/ red-square', function () {
-    return Inertia::render('RedSquare', [
-        'color' => 'crimson',
-        'size' => '78'
-    ]);
-});
+Route::get('/red-square', [S::class, 'redSquare']);
 
-require __DIR__.'/auth.php';
+
+require __DIR__ . '/auth.php';
