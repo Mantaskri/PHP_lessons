@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\movie;
-use App\Http\Requests\StoremovieRequest;
-use App\Http\Requests\UpdatemovieRequest;
+use App\Models\Movie;
+use App\Models\Category;
+use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
@@ -25,16 +25,18 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return view('movie.create', [
+            'categories' => Category::orderBy('updated_at', 'desc')->get(),
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoremovieRequest  $request
+     * @param  \Illuminate\Http\Request;  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoremovieRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\movie  $movie
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function show(movie $movie)
+    public function show(Movie $movie)
     {
         //
     }
@@ -53,10 +55,10 @@ class MovieController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\movie  $movie
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function edit(movie $movie)
+    public function edit(Movie $movie)
     {
         //
     }
@@ -64,11 +66,11 @@ class MovieController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatemovieRequest  $request
-     * @param  \App\Models\movie  $movie
+     * @param  \Illuminate\Http\Request;  $request
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatemovieRequest $request, movie $movie)
+    public function update(Request $request, Movie $movie)
     {
         //
     }
@@ -76,10 +78,10 @@ class MovieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\movie  $movie
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function destroy(movie $movie)
+    public function destroy(Movie $movie)
     {
         //
     }
