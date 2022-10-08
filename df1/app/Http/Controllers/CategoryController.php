@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -35,7 +35,11 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Category::create([
+            'title' => $request->title
+        ]);
+
+        return redirect()->back();
     }
 
     /**
