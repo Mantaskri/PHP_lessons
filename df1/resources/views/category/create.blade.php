@@ -9,7 +9,7 @@
                         <h2>New Category</h2>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('m_store') }}" method="post">
+                        <form action="{{ route('c_store') }}" method="post">
                             @csrf
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Title</span>
