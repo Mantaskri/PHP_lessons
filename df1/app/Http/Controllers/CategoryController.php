@@ -79,8 +79,12 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        Category::updateOrCreate(
-            ['id' => $category->id],
+        // Category::updateOrCreate(
+        //     ['id' => $category->id],
+        //     ['title' => $request->title]
+        // );
+        // return redirect()->route('c_index');
+        $category->update(
             ['title' => $request->title]
         );
         return redirect()->route('c_index');
