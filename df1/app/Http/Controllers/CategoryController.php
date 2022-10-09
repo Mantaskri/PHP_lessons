@@ -52,7 +52,9 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        return view('category.show', [
+            'category' => $category
+        ]);
     }
 
     /**
@@ -63,7 +65,9 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('category.edit', [
+            'category' => $category
+        ]);
     }
 
     /**
@@ -75,7 +79,11 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        Category::updateOrCreate(
+            ['id' => $category->id],
+            ['title' => $request->title]
+        );
+        return redirect()->route('c_index');
     }
 
     /**

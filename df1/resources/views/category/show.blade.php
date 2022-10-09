@@ -12,7 +12,7 @@
                         <div class="category">
                             <h5>{{ $category->title }}</h5>
                         </div>
-                        <ul class="list-group">
+                        {{-- <ul class="list-group">
                             @forelse($category->movies as $movie)
                                 <li class="list-group-item">
                                     <div class="movies-list">
@@ -25,7 +25,7 @@
                             @empty
                                 <li class="list-group-item">No movies found</li>
                             @endforelse
-                        </ul>
+                        </ul> --}}
                         @if (Auth::user()->role >= 10)
                             <div class="buttons mt-2">
                                 <form action="{{ route('c_delete_movies', $category) }}" method="post">
