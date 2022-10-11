@@ -28,9 +28,26 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('123'),
         ]);
         $time = Carbon::now();
-        foreach(['Drama', 'Horror', 'Comedy', 'Action', 'Sci-fi'] as $cat){
+
+        foreach (['Drama', 'Horror', 'Comedy', 'Action', 'Sci-fi'] as $cat) {
             DB::table('categories')->insert([
                 'title' => $cat,
+                'created_at' => $time->addSeconds(1),
+                'updated_at' => $time
+            ]);
+        }
+        foreach([
+            'Blonde',
+            'Friday the 13th',
+            'Night School',
+            'Die hard',
+            'Avengers',
+            'Morbius'
+            ] as $movie) {
+            DB::table('movies')->insert([
+                'title' => $movie,
+                'price' => rand(100, 1000) / 100,
+                'category_id' => rand(1, 5),
                 'created_at' => $time->addSeconds(1),
                 'updated_at' => $time
             ]);
