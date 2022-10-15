@@ -15,7 +15,12 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Bandomasis 2var. ',
+
+    // --- Maybe ---
+    // And also inside .env file
+    // APP_NAME=your_app_name
+    // 'name' => env('APP_NAME', 'fallback_app_name'),
 
     /*
     |--------------------------------------------------------------------------
