@@ -84,7 +84,13 @@ class MovieController extends Controller
      */
     public function update(Request $request, Movie $movie)
     {
-        //
+        $movie->update([
+            'title' => $request->title,
+            'price' => $request->price,
+            'category_id' => $request->category_id
+        ]);
+
+        return redirect()->route('m_index');
     }
 
     /**
