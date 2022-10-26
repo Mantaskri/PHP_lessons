@@ -10,15 +10,21 @@
                     </div>
                     <div class="card-body">
                         <div class="movie-show">
-                            <h3 class="title"><span class="small-text">Model: </span>{{ $movie->maker }} {{ $movie->make_year }}</h3>
-                            <h2 class="plate"><span class="small-text">License plate: </span>{{ $movie->plate }}</h2>
+                            <div class="movie-show">
+                                <div class="line"><small>Title:</small>
+                                    <h5>{{$movie->title}}</h5>
+                                </div>
+                                <div class="line"><small>Price:</small>
+                                    <h5>{{$movie->price}}</h5>
+                                </div>
+                                <div class="line"><small>Category:</small>
+                                    <h5>{{$movie->getCategory->title}}</h5>
+                                </div>
                             @if ($movie->photo)
-                            <div class="image">
-                                <img src="{{$movie->photo}}" alt="photo">
-                            </div>
+                                <div class="image">
+                                    <img src="{{ $movie->photo }}" alt="photo">
+                                </div>
                             @endif
-                            <p class="description">{{ $movie->mechanic_notices }}</p>
-                            <h5 class="title"><span class="small-text">Mechanic: </span>{{ $movie->getMechanic->name }} {{ $movie->getMechanic->surname }}</h5>
                         </div>
                     </div>
                 </div>
