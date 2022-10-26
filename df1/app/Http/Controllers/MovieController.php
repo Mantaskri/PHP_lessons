@@ -57,7 +57,7 @@ class MovieController extends Controller
     public function show(Movie $movie)
     {
         return view('movie.show', [
-            'movie' => $movie
+            'movie' => $movie,
         ]);
     }
 
@@ -69,7 +69,10 @@ class MovieController extends Controller
      */
     public function edit(Movie $movie)
     {
-        //
+        return view('movie.edit', [
+            'movie' => $movie,
+            'categories' => Category::orderBy('updated_at', 'desc')->get()
+        ]);
     }
 
     /**
