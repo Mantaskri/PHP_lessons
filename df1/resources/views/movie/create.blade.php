@@ -17,7 +17,7 @@
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Price</span>
-                                <input value="{{ old('pricre') }}" type="text" class="form-control" name="pricre">
+                                <input value="{{ old('price') }}" type="text" class="form-control" name="price">
                             </div>
                             <select class="form-select mb-3" name="category_id">
                                 <option selected value="0">Choose category</option>
